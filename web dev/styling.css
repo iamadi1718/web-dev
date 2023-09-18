@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(131, 74, 74);
+}
+
+/*CSS VARIABLES*/
+:root{
+    --navbar-height:60px;
+}
+/* Navigation bar*/
+#navbar{
+    display:flex;
+    align-items:center;
+}
+
+
+
+/*logo and image*/
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height:59px;
+    margin:3px 6px;
+}
+/*navigation bar:list styling*/
+#navbar{
+    
+    position: relative;
+    
+    
+}
+
+
+#navbar ul{
+    display: flex;
+
+}
+#navbar ::before{
+    content:"";
+     
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+#navbar ul li{
+    list-style:none;
+    margin:15px;
+    
+}
+ 
+
+#navbar  ul li a{
+    display: block;
+    padding:3px 22px;
+    
+    border-radius:20px;
+    text-decoration: none;
+    color:white;
+    
+}
+#navbar ul  li a:hover
+{
+   color:palegreen;
+   background-color: palevioletred;
+}
+
+
+/*HOME SECTION*/
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 20px;
+
+    justify-content:center;
+    align-items:center;
+    background: url('https://img.freepik.com/premium-photo/photo-closeup-shot-delicious-food_829042-89.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:500px;
+    
+}
+#home ::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:640px;
+    
+    
+    width:100%;
+    opacity:0.34;
+    
+}
+.primary{
+    font-size: 3rem;
+    padding:12px;
+    color:white;
+}
+#home p{
+    text-align: center;
+    color: azure;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid red;
+    color:white;
+    background-color: black;
+    margin:15px;
+    cursor:pointer;
+}
+/*SERVICE SECTION*/
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+#home .h-primary{
+    color: whitesmoke;
+}
+ 
+    .h-primary{
+        font-family: 'Bree Serif', serif;
+        font-size: 3.8rem;
+        padding: 12px;
+    }
+/*FORM*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://www.cloud4c.com/kr/sites/kr/files/2022-07/cloud4c-company-contact-1Desktop.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px
+}
+#contact-box textarea{
+    width:100%;
+    border-radius: 9px;
+
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align:center;
+}
+
